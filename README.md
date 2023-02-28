@@ -46,4 +46,4 @@ CSS styling: style.css
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## VISITA EL DESPLIEGUE DE ESTE SITIO WEB 
-[Visita la web](https://web-tributo-al-breakin.netlify.app/)
+[Visita la web Tributo](https://web-tributo-al-breakin.netlify.app/)
