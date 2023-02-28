@@ -1,6 +1,6 @@
 # Web-Tributo-al-Breakin
 Este es un sitio web tributo diseñado con HTML y CSS que se enfoca en la historia del hip hop y el breaking. El breaking es una de las 4 disciplinas fundamentales del hip hop y se caracteriza por movimientos de acrobacias y habilidades físicas.
-## EL BREAKING
+## EL BREAKIN'
 ### (La danza original de la cultura hiphop)
 El breakin es una rama de la Cultura HipHop, considerada como el origen, gracias a esta se divulgo y se conoce hoy en dia el hiphop y sus demás elementos
 como el DeeJay, el Rap y el Graffiti 
