@@ -1,0 +1,1245 @@
+@media only screen and (min-width: 200px) {
+    *
+
+    /* Estilos Generales */
+        {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        list-style: none;
+        text-decoration: none;
+        list-style-type: none;
+        box-sizing: border-box;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: "Shrikhand", cursive;
+        font-size: 15px;
+        color: #BF0123;
+    }
+
+    div h4 {
+        font-family: "Shrikhand", cursive;
+        font-size: 14px;
+        color: white;
+    }
+
+    div h5 {
+        font-family: "Coming Soon", cursive;
+        font-size: 14px;
+        color: black;
+        padding: 0 1rem;
+    }
+
+    a {
+        -webkit-text-stroke: 0.1px black;
+    }
+
+    :root {
+        --color-bg: #013B6C;
+        --color-variant: #359ea4;
+    }
+
+    p,
+    .send,
+    ::placeholder {
+        font-family: "Coming Soon", cursive;
+        font-size: 12px;
+        color: white;
+    }
+
+    #enlaceInicio {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: end;
+        text-align: end;
+        width: 100%;
+        padding: 1rem;
+        background-color: #013b6c;
+    }
+
+    .titleSection {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 30px;
+        background-color: #013b6c;
+        -webkit-text-stroke: 0.1px black;
+    }
+
+    /* Fin de estilos Generales */
+
+    /*************************************************/
+    /* Header Diseño */
+    .header {
+        background-image: url(../IMG/fondob1.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .menu {
+        background-color: #013b6c;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, auto);
+        padding: 2rem;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        /* agrega esta propiedad para fijar el menú */
+        top: 0;
+        /* establece la posición superior en 0 para fijar el menú en la parte superior de la página */
+        width: 100%;
+        /* establece el ancho en 100% para que el menú ocupe todo el ancho de la página */
+        z-index: 100;
+        /* establece un índice z alto para que el menú aparezca por encima del resto del contenido */
+    }
+
+    .logo1 {
+        width: 30px;
+    }
+
+    /* Fin diseño header */
+    /***************************************************/
+
+    /* creacion menu desplegable */
+
+    /* Menu hamburguesa */
+    .lbl-menu {
+        cursor: pointer;
+    }
+
+    .lbl-menu #spn1,
+    #spn2,
+    #spn3 {
+        position: absolute;
+        background-color: black;
+        width: 20px;
+        height: 4px;
+        border-radius: 10px;
+        transition: all 400ms ease;
+    }
+
+    #spn1 {
+        top: 55px;
+    }
+
+    #spn2 {
+        top: 45px;
+    }
+
+    #spn3 {
+        top: 35px;
+    }
+
+    #btn-menu {
+        display: none;
+    }
+
+    #btn-menu:checked~.lbl-menu #spn1 {
+        transform: rotate(140deg);
+        top: 45px;
+        z-index: 1;
+    }
+
+    #btn-menu:checked~.lbl-menu #spn2 {
+        display: none;
+    }
+
+    #btn-menu:checked~.lbl-menu #spn3 {
+        transform: rotate(-140deg);
+        top: 45px;
+        z-index: 1;
+    }
+
+    /* Fin Menu hamburguesa */
+
+    /* Estilos para el menú desplegable */
+    .menu_items {
+        display: none;
+    }
+
+    #btn-menu:checked~.menu_items {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        right: 0;
+        top: 0px;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        background-color: white;
+    }
+
+    ul.menu_items {
+        padding: 10rem;
+    }
+
+    a {
+        font-family: "Shrikhand";
+        font-size: 16px;
+        color: brown;
+    }
+
+    /* Fin Estilos para el menú desplegable */
+    /* Fin creacion menu desplegable */
+
+    /***************************************************/
+    /* Creacion banner de inicio */
+    .tituloFondo {
+        background-image: url(../IMG/fondob1.png);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        padding: 1.5rem;
+    }
+
+    .banner1,
+    .banner2 {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    /* Fin de Creacion banner de inicio */
+    /***************************************************/
+    /* Inicio seccion de Menu Historia  */
+
+    .containerBig {
+        background-color: var(--color-bg);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .caja1,
+    .caja2,
+    .caja3,
+    .caja4 {
+        width: 275px;
+        height: 154px;
+        text-align: center;
+        border-style: solid;
+        border-width: 2px;
+        border-color: brown;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .caja1 {
+        background-image: url(../IMG/cuando1.png);
+    }
+
+    .caja2 {
+        background-image: url(../IMG/donde2.png);
+    }
+
+    .caja3 {
+        background-image: url(../IMG/fechas3.png);
+    }
+
+    .caja4 {
+        background-image: url(../IMG/pioneros4.png);
+    }
+
+    /* Fin Seccion menu historia  */
+    /********************************************************/
+    /* Inicio Sección Historia */
+
+    .historia1 {
+        width: 100%;
+        background-color: var(--color-bg);
+        display: block;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .separate1,
+    .separate2,
+    .separate3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .elementos,
+    .bailarin,
+    .freeze {
+        padding: 1rem;
+        width: 130px;
+    }
+
+    /* Fin Seccion Historia */
+    /*******************************************************/
+    /*Seccion porque hacer tributo al breakin?*/
+    .tributo {
+        background-color: #013B6C;
+        padding: 2rem;
+        width: auto;
+    }
+
+    .tributo p {
+        padding: 1rem;
+    }
+
+    .tributo H4 {
+        padding: 1rem;
+        text-align: center;
+        color: black;
+    }
+
+    /*Fin Seccion porque hacer tributo al breakin?*/
+    /*******************************************************/
+    /*Inicio Seccion ¿Cúando surge?*/
+
+    .cuandoSurge {
+        width: 100%;
+        background-color: var(--color-bg);
+        background-position: center center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .carton,
+    .cypher {
+        padding: 1rem;
+        width: 130px;
+    }
+
+    .cuando1,
+    .cuando2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    /*Inicio Seccion ¿Cúando surge?*/
+    /********************************************************************/
+    /*Inicio Seccion ¿donde surge?*/
+    .dondeSurge {
+        width: 100%;
+        background-color: var(--color-bg);
+        background-position: center center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .imgdonde {
+        padding: 0 0 2rem 0;
+        width: 90px;
+    }
+
+    /*Fin seccion ¿Donde surge?*/
+    /*********************************************************************/
+    /*Inicio Seccion Fechas*/
+
+    .fechas {
+        width: 100%;
+        background-color: var(--color-bg);
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .der,
+    .izq {
+        grid-column: 2;
+        width: 100%;
+    }
+
+    .FyT1,
+    .FyT2,
+    .FyT3,
+    .FyT4,
+    .FyT5,
+    .FyT6 {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 0;
+    }
+
+    .linea {
+        display: none;
+    }
+
+    /*Fin Seccion Fechas*/
+    /**********************************************************************/
+    /*Inicio seccion pioneros*/
+    .pioneros {
+        width: 100%;
+        background-color: var(--color-bg);
+        background-position: center center;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cajap1,
+    .cajap2,
+    .cajap3 {
+        padding: 1rem;
+    }
+
+    .cajap1 img,
+    .cajap2 img,
+    .cajap3 img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .cajap1 h4,
+    .cajap2 h4,
+    .cajap3 h4 {
+        padding: 1rem;
+    }
+
+    .cajap1 p,
+    .cajap2 p,
+    .cajap3 p {
+        padding: 0 1rem;
+    }
+
+    /*Fin seccion pioneros*/
+    /************************************************************************/
+    /*Inicio Seccion Galeria*/
+    .galeria {
+        width: 100%;
+        background-color: var(--color-bg);
+        background-position: center center;
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /*Inicio Seccion Galeria*/
+    /************************************************************************/
+    /*Inicio seccion Formulario*/
+
+    .contacto {
+        width: 100%;
+        background-color: #013b6c;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .form1,
+    .form2 {
+        padding: 1rem;
+    }
+
+    .form3 {
+        padding: 1rem;
+    }
+
+    .inp1,
+    .inp2 {
+        background-color: var(--color-variant);
+        width: 240px;
+        height: 56px;
+        padding: 1rem;
+    }
+
+    .inp3 {
+        width: 240px;
+        height: 164px;
+        background-color: var(--color-variant);
+        padding: 1rem;
+    }
+
+    .send {
+        background-color: var(--color-variant);
+        width: 104px;
+        height: 56px;
+        padding: 1rem;
+    }
+
+    .contacto h4 {
+        font-family: Nerko One;
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    footer {
+        background-color: #013B6C;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    /*Fin seccion Formulario*/
+
+    /*****************************************************************/
+}
+
+
+/********************************************************************/
+/********************************************************************/
+/********************************************************************/
+
+
+@media screen and (min-width: 576px) {
+
+    h1,
+    h2,
+    h3 {
+        font-family: "Shrikhand", cursive;
+        font-size: 18px;
+        color: #BF0123;
+    }
+
+    div h4 {
+        font-family: "Shrikhand", cursive;
+        font-size: 16px;
+        color: white;
+    }
+
+    div h5 {
+        font-family: "Coming Soon", cursive;
+        font-size: 16px;
+        color: black;
+        padding: 0 1rem;
+    }
+
+    /* Header Diseño */
+    .header {
+        background-image: url(../IMG/fondob1.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .logo1 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu {
+        display: flex;
+        padding: 2rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Fin diseño header */
+    /* Header Diseño */
+    .header {
+        background-image: url(../IMG/fondob1.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .menu {
+        background-color: #013b6c;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, auto);
+        padding: 2rem;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        /* agrega esta propiedad para fijar el menú */
+        top: 0;
+        /* establece la posición superior en 0 para fijar el menú en la parte superior de la página */
+        width: 100%;
+        /* establece el ancho en 100% para que el menú ocupe todo el ancho de la página */
+        z-index: 100;
+        /* establece un índice z alto para que el menú aparezca por encima del resto del contenido */
+    }
+
+    .logo1 {
+        width: 30px;
+    }
+
+    /* Fin diseño header */
+    /***************************************************/
+    /***************************************************/
+
+    /* Inicio seccion de Menu Historia  */
+
+    .containerBig {
+        background-color: var(--color-bg);
+        width: 100%;
+        display: grid;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .caja1,
+    .caja2,
+    .caja3,
+    .caja4 {
+        width: 375px;
+        height: 254px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* Fin Seccion menu historia  */
+    /********************************************************/
+    /* Inicio Sección Historia */
+
+
+    .elementos,
+    .bailarin,
+    .freeze {
+        padding: 1rem;
+        width: 200px;
+    }
+
+    /* Fin Seccion Historia */
+    /*******************************************************/
+    /*Inicio Seccion ¿Cúando surge?*/
+
+    .carton,
+    .cypher {
+        padding: 1rem;
+        width: 200px;
+    }
+
+    /*Inicio Seccion ¿Cúando surge?*/
+    /********************************************************************/
+    /*Inicio Seccion ¿donde surge?*/
+
+    .imgdonde {
+        padding: 0 0 2rem 0;
+        width: 150px;
+    }
+
+    /*Fin seccion ¿Donde surge?*/
+    /*********************************************************************/
+    /*Fechas*/
+    .der,
+    .izq {
+        grid-column: 2;
+        width: 100%;
+    }
+
+    /*Fin fechas*/
+    /*********************************************************************/
+    /*Inicio seccion pioneros*/
+
+    .cajap1,
+    .cajap2,
+    .cajap3 {
+        padding: 1rem;
+    }
+
+    .cajap1 img,
+    .cajap2 img,
+    .cajap3 img {
+        height: 150px;
+        width: 150px;
+    }
+
+    /*Fin seccion pioneros*/
+    /************************************************************************/
+    /*Inicio Seccion Galeria*/
+    .galeria {
+        width: 100%;
+        background-color: var(--color-bg);
+        background-position: center center;
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /*Inicio Seccion Galeria*/
+    /************************************************************************/
+    /*Inicio seccion Formulario*/
+
+    .contacto {
+        width: 100%;
+        height: 100vh;
+        background-color: #013b6c;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .form1,
+    .form2 {
+        padding: 1rem;
+    }
+
+    .form3 {
+        padding: 1rem;
+    }
+
+    .inp1,
+    .inp2 {
+        background-color: var(--color-variant);
+        width: 550px;
+        height: 56px;
+        padding: 1rem;
+    }
+
+    .inp3 {
+        width: 550px;
+        height: 164px;
+        background-color: var(--color-variant);
+        padding: 1rem;
+    }
+
+    .send {
+        background-color: var(--color-variant);
+        width: 204px;
+        height: 56px;
+    }
+
+    /*Fin seccion Formulario*/
+    /*****************************************************************/
+}
+
+
+/********************************************************************/
+/********************************************************************/
+/********************************************************************/
+
+
+@media screen and (min-width: 768px) {
+
+    h1,
+    h2,
+    h3 {
+        font-family: "Shrikhand", cursive;
+        font-size: 20px;
+        color: #BF0123;
+    }
+
+    div h4 {
+        font-family: "Shrikhand", cursive;
+        font-size: 18px;
+        color: white;
+    }
+
+    div h5 {
+        font-family: "Coming Soon", cursive;
+        font-size: 18px;
+        color: black;
+        padding: 0 1rem;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+
+    /* Inicio seccion de Menu Historia  */
+
+    .containerBig {
+        background-color: var(--color-bg);
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .caja1,
+    .caja2,
+    .caja3,
+    .caja4 {
+        width: 375px;
+        height: 254px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* Fin Seccion menu historia  */
+    /********************************************************/
+    /*Inicio Seccion Fechas*/
+
+    .fechas {
+        width: 100%;
+        background-color: var(--color-bg);
+        background-position: center center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 5%;
+    }
+
+    .linea {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .containerF1,
+    .containerF2,
+    .containerF3,
+    .containerF4,
+    .containerF5,
+    .containerF6 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .FyT1,
+    .FyT2,
+    .FyT3,
+    .FyT4,
+    .FyT5,
+    .FyT6 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .izq,
+    .der {
+        padding: 10px;
+        width: 500px;
+    }
+
+    /*Fin Seccion Fechas*/
+    /*********************************************************************/
+    /*Inicio seccion pioneros*/
+    .pioneros {
+        width: 100%;
+        background-color: var(--color-bg);
+        background-position: center center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .cajap1,
+    .cajap2,
+    .cajap3 {
+        padding: 3rem;
+    }
+
+    .cajap1 img,
+    .cajap2 img,
+    .cajap3 img {
+        height: 150px;
+        width: 150px;
+    }
+
+    /*Fin seccion pioneros*/
+    /*Inicio seccion Formulario*/
+
+    .contacto {
+        width: 100%;
+        height: 100vh;
+        background-color: #013b6c;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .form1,
+    .form2 {
+        padding: 1rem;
+    }
+
+    .form3 {
+        padding: 1rem;
+    }
+
+    .inp1,
+    .inp2 {
+        background-color: var(--color-variant);
+        width: 650px;
+        height: 56px;
+        padding: 1rem;
+    }
+
+    .inp3 {
+        width: 650px;
+        height: 164px;
+        background-color: var(--color-variant);
+        padding: 1rem;
+    }
+
+    .send {
+        background-color: var(--color-variant);
+        width: 204px;
+        height: 56px;
+    }
+
+    /*Fin seccion Formulario*/
+    /*****************************************************************/
+}
+
+/********************************************************************/
+/********************************************************************/
+/********************************************************************/
+
+
+@media screen and (min-width: 1000px) {
+
+    h1,
+    h2,
+    h3 {
+        font-family: "Shrikhand", cursive;
+        font-size: 20px;
+        color: #BF0123;
+    }
+
+    div h4 {
+        font-family: "Shrikhand", cursive;
+        font-size: 16px;
+        color: white;
+    }
+
+    div h5 {
+        font-family: "Coming Soon", cursive;
+        font-size: 16px;
+        color: black;
+        padding: 0 1rem;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    /* Menu hamburguesa */
+    .lbl-menu {
+        display: none;
+    }
+
+    /* Fin Menu hamburguesa */
+
+    /* Estilos para el menú */
+    .menu_items {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        background-color: #bf0123;
+        border-radius: 50px;
+        grid-area: menu_items;
+    }
+
+    ul.menu_items {
+        padding: 1rem;
+    }
+
+    .menu_items a {
+        font-family: "Shrikhand";
+        font-size: 15px;
+        color: black;
+        padding: 1rem;
+    }
+
+    /* Fin Estilos para el menú */
+    /*************************************************/
+    /* Inicio seccion de Menu Historia  */
+
+    .containerBig {
+        background-color: var(--color-bg);
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .caja1,
+    .caja2,
+    .caja3,
+    .caja4 {
+        width: 475px;
+        height: 354px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* Fin Seccion menu historia  */
+    /********************************************************/
+    /* Inicio Sección Historia */
+    .separate1 p,
+    .separate2 p,
+    .separate3 p {
+        padding: 10rem;
+    }
+
+    .elementos,
+    .bailarin,
+    .freeze {
+        width: 800px;
+    }
+
+    /* Fin Seccion Historia */
+    /*******************************************************/
+    /*Inicio Seccion ¿Cúando surge?*/
+    .carton,
+    .cypher {
+        width: 800px;
+    }
+
+    .cuando1 p,
+    .cuando2 p {
+        padding: 5rem;
+    }
+
+    /*Inicio Seccion ¿Cúando surge?*/
+    /********************************************************************/
+    /*Inicio Seccion ¿donde surge?*/
+    .dondeSurge {
+        padding: 8rem;
+    }
+
+    .donde1 {
+        padding: 3rem;
+    }
+
+    .imgdonde {
+        padding: 0 0 2rem 0;
+        width: 200px;
+    }
+
+    /*Fin seccion ¿Donde surge?*/
+    /*********************************************************************/
+    /*Inicio Seccion Fechas*/
+
+    .fechas {
+        width: 100%;
+        background-color: var(--color-bg);
+        background-position: center center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+    }
+
+    .lineaImg {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerF1,
+    .containerF2,
+    .containerF3,
+    .containerF4,
+    .containerF5,
+    .containerF6 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .FyT1,
+    .FyT2,
+    .FyT3,
+    .FyT4,
+    .FyT5,
+    .FyT6 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .izq,
+    .der {
+        padding: 10px;
+    }
+
+    /*Fin Seccion Fechas*/
+    /**********************************************************************/
+    /*Inicio seccion pioneros*/
+    .pioneros {
+        width: 100%;
+        background-color: var(--color-bg);
+        background-position: center center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .cajap1,
+    .cajap2,
+    .cajap3 {
+        padding: 3rem;
+    }
+
+    .cajap1 img,
+    .cajap2 img,
+    .cajap3 img {
+        height: 200px;
+        width: 200px;
+    }
+
+    /*Fin seccion pioneros*/
+    /************************************************************************/
+    /*Inicio Seccion Galeria*/
+    .galeria {
+        width: 100%;
+        background-color: var(--color-bg);
+        background-position: center center;
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /*Inicio Seccion Galeria*/
+    /************************************************************************/
+    /*Inicio seccion Formulario*/
+
+    .contacto {
+        width: 100%;
+        background-color: #013b6c;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .form1,
+    .form2 {
+        padding: 1rem;
+    }
+
+    .form3 {
+        padding: 1rem;
+    }
+
+    .inp1,
+    .inp2 {
+        background-color: var(--color-variant);
+        width: 900px;
+        height: 56px;
+        padding: 1rem;
+    }
+
+    .inp3 {
+        width: 900px;
+        height: 164px;
+        background-color: var(--color-variant);
+        padding: 1rem;
+    }
+
+    .send {
+        background-color: var(--color-variant);
+        width: 304px;
+        height: 76px;
+        padding: 1rem;
+    }
+
+    /*Inicio seccion Formulario*/
+    /*****************************************************************/
+}
+
+/*Carrusel*/
+.slider-frame {
+    width: 100%;
+    overflow: hidden;
+    background-color: #013B6C;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider-frame img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+.slider {
+    background-color: #013B6C;
+}
+
+.slider a {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 1rem;
+}
